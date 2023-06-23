@@ -2,13 +2,13 @@
 
 This week, the mandatory exercises are:
 
-1. **Prime Checker**:In this exercise, you would write a program to determine if a given number is a prime number. You would also need to check if the given input is a number.
+1. **Prime Checker**: In this exercise, you will write a program to determine if a given number is a prime number. You will also need to check if the given input is a number.
 
-1. **Palindrome Checker**: In this exercise, you would write a program to determine if a given input is a palindrome. 
+1. **Palindrome Checker**: In this exercise, you will write a program to determine if a given input is a palindrome. 
 
-1. **Three-digit Armstrong**: In this exercise, you would write a program to determine if a given number is an Armstrong number. You would also need to check if the given input is a three-digit number in the first place.
+1. **Three-digit Armstrong**: In this exercise, you will write a program to determine if a given number is an Armstrong number. You will also need to check if the given input is a three-digit number.
 
-1. **Math Helper**:In this exercise you will write a program to help calculate different math functions. This exercise combines the other three exercises in this week, namely, the Prime  Checker, Palindrome Checker and the Three-digit Armstrong. Given a single interface, a user can specify which of the three math functions to be computed and the appropriate answer would be generated.
+<!-- 1. **Math Helper**:In this exercise you will write a program to help calculate different math functions. This exercise combines the other three exercises in this week, namely, the Prime  Checker, Palindrome Checker and the Three-digit Armstrong. Given a single interface, a user can specify which of the three math functions to be computed and the appropriate answer will be generated. -->
 
 
 
@@ -24,33 +24,47 @@ This week, the mandatory exercises are:
 
 <!-- To check that your solution meets the criteria, run `npm run test` in the console. (If you haven't already, you'll need to run `npm install` to install the packages required for testing). -->
 
-If your solution has all the required elements it should say something like:
+**Running all tests for the week**: If your solutions have all the required elements it should say something like:
+
 
 ```txt
- PASS  ./html-elements.test.js
-  The recipe page has the required HTML elements
-    ✓ uses at least one heading element (50 ms)
-    ✓ uses at least three heading elements (18 ms)
-    ✓ uses at least two heading elements (10 ms)
-    ✓ uses at least one image element (5 ms)
-    ✓ index.html is a valid html doc (193 ms)
+> test
+> jest
 
-Test Suites: 1 passed, 1 total
-Tests:       5 passed, 5 total
+ PASS  armstrong-number/armstrong-number.test.js
+ PASS  prime-check/prime-check.test.js
+ PASS  palindrome-check/palindrome-check.test.js
+
+Test Suites: 3 passed, 3 total
+Tests:       11 passed, 11 total
 Snapshots:   0 total
-Time:        2.104 s
+Time:        0.909 s, estimated 1 s
 Ran all test suites.
 ```
 
+**Running an individual test**: If your solution for a given exercise has all the required elements it should say something like:
+
+```txt
+> test
+> jest prime-check
+
+ PASS  prime-check/prime-check.test.js
+  primeCheck
+    ✓ checking prime numbers (4 ms)
+    ✓ checking  zeros  and negatives
+    ✓ checking  non-numbers (1 ms)
+    ✓ checking  non-primes (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        0.371 s, estimated 1 s
+Ran all test suites matching /prime-check/i.
+```
+
+
 If it does not pass one of the tests, you should get some feedback about what is wrong or missing in your solution.
 
-### Valid HTML
-
-The last test for each exercise is that your HTML follows all of the recommended rules for an HTML document.
-
-[Here is a list](https://html-validate.org/rules/index.html) of all the rules that will be automatically checked. You don't have to memorize this list or check each rule yourself. Instead, if you get feedback that your HTML breaks one of the rules, you can find an explanation of the rule from that list.
-
-Once you have passed all tests for the week, then you are ready to submit to Gradescope.
 
 ## Submission
 In order to get credit for your project, you must:
